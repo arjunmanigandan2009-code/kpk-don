@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveen Kumar K (KPK DON) | Playback Singer • Master Pencil Shader • Academic Topper</title>
+  <meta name="description" content="Official website of Praveen Kumar K ('KPK DON') — celebrated playback singer, master pencil shading artist, and academic topper. Explore music, hyper-realistic graphite art, and scholastic accolades.">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Particles Canvas & Ambient Glow Orbs -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Praveen Kumar K Home">
+        <div class="brand-monogram">KPK</div>
+        <div class="brand-details">
+          <span class="brand-name">Praveen Kumar K</span>
+          <span class="brand-tag">KPK DON • Official</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#triad" class="nav-link">The Triad</a></li>
+        <li><a href="#music" class="nav-link">Playback Singer</a></li>
+        <li><a href="#graphite" class="nav-link">Pencil Art</a></li>
+        <li><a href="#academics" class="nav-link">Academic Topper</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#playground" class="nav-link">Sketch Pad</a></li>
+        <li><a href="#about" class="nav-link">The Story</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Interactive Audio Synth Indicator Button -->
+        <button id="navAudioToggle" class="audio-toggle-btn" aria-label="Toggle ambient studio audio">
+          <div class="audio-bars">
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+          </div>
+          <span class="btn-label">Studio Audio</span>
+        </button>
+
+        <a href="#contact" class="nav-cta-btn">Book / Commission</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <span class="alias-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            POPULARLY KNOWN AS <strong>KPK DON</strong>
+          </span>
+          <span class="identity-badge">Polymath & Prodigy</span>
+        </div>
+
+        <h1 class="hero-title">
+          Praveen Kumar <span class="gold-text">K.</span>
+        </h1>
+
+        <div class="hero-subtitle-wrap">
+          <span>The</span>
+          <span class="dynamic-role">Playback Singer & Vocal Artist</span>
+        </div>
+
+        <p class="hero-description">
+          A rare multidimensional phenomenon uniting soulful cinematic playback vocals, hyper-realistic graphite & charcoal shading mastery, and top-tier academic gold medal distinction.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#music" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Listen to Vocals
+          </a>
+          <a href="#graphite" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18.375 2.625a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z"></path>
+            </svg>
+            Explore Pencil Art
+          </a>
+          <a href="#contact" class="btn-glass">
+            Commission Art
+          </a>
+        </div>
+
+        <!-- Hero Stats Row -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-value stat-count" data-target="50" data-suffix="+">50+</span>
+            <span class="stat-label">Vocal & Studio Tracks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value stat-count" data-target="100" data-suffix="+">100+</span>
+            <span class="stat-label">Graphite Masterpieces</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value stat-count" data-target="1" data-suffix="st Rank">1st Rank</span>
+            <span class="stat-label">Academic Gold Medalist</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Container -->
+      <div class="hero-visual-wrap">
+        <!-- Floating Glass Card Top-Left -->
+        <div class="floating-badge floating-badge-top-left">
+          <div class="badge-icon badge-icon-music">🎙️</div>
+          <div>
+            <div class="badge-text-primary">Playback Singer</div>
+            <div class="badge-text-secondary">Cinematic & Emotive Vocals</div>
+          </div>
+        </div>
+
+        <!-- Main Hero Card -->
+        <div class="hero-main-card">
+          <img src="assets/images/hero-multiverse.jpg" alt="Praveen Kumar K (KPK DON) - Playback Singer, Pencil Shader, and Academic Topper" class="hero-img">
+          <div class="hero-card-overlay"></div>
+          <div class="hero-card-footer">
+            <div class="hero-card-title">Praveen Kumar K ("KPK DON")</div>
+            <div class="hero-card-subtitle">Where Melody, Graphite & Intellect Converge</div>
+          </div>
+        </div>
+
+        <!-- Floating Glass Card Bottom-Right -->
+        <div class="floating-badge floating-badge-bottom-right">
+          <div class="badge-icon badge-icon-topper">🥇</div>
+          <div>
+            <div class="badge-text-primary">Academic Topper</div>
+            <div class="badge-text-secondary">Gold Medals & Scholastic Laurels</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       THE TRIAD: 3 DIMENSIONS OF EXCELLENCE
+       ========================================================================== */ -->
+  <section id="triad" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Tri-Fold Mastery</span>
+        <h2 class="section-title">The Three Pillars of <span class="gold-text">KPK DON</span></h2>
+        <p class="section-subtitle">
+          Few individuals transcend the boundaries of artistic intuition and analytical intellect. Praveen Kumar K commands mastery across three distinct, demanding disciplines.
+        </p>
+      </div>
+
+      <div class="triad-grid">
+        <!-- Pillar 1: Playback Singer -->
+        <div class="triad-card triad-music">
+          <div class="triad-icon-wrap">🎙️</div>
+          <span class="triad-role-tag">Dimension I • Melody</span>
+          <h3 class="triad-title">Playback Singer & Vocalist</h3>
+          <p class="triad-desc">
+            Possessing an expressive vocal range characterized by pristine pitch control, deep emotional resonance, and versatility spanning cinematic playback, classical fusion, and unplugged melodies.
+          </p>
+          <div class="triad-pill-list">
+            <span class="triad-pill">Film Playback</span>
+            <span class="triad-pill">Studio Tracking</span>
+            <span class="triad-pill">Live Stage</span>
+            <span class="triad-pill">Acoustic Fusion</span>
+          </div>
+          <a href="#music" class="triad-link">
+            Explore Vocal Studio 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14m-7-7 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Pillar 2: Master Pencil Shader -->
+        <div class="triad-card triad-art">
+          <div class="triad-icon-wrap">✏️</div>
+          <span class="triad-role-tag">Dimension II • Visual Art</span>
+          <h3 class="triad-title">Professional Pencil Shader</h3>
+          <p class="triad-desc">
+            Breathing life into blank paper using 2H through 9B graphite and charcoal. Celebrated for hyper-realistic celebrity tributes (including musical maestro A.R. Rahman), wildlife realism, and micro-texture portraiture.
+          </p>
+          <div class="triad-pill-list">
+            <span class="triad-pill">Hyper-Realism</span>
+            <span class="triad-pill">Charcoal Blending</span>
+            <span class="triad-pill">Celebrity Portraits</span>
+            <span class="triad-pill">Commissions</span>
+          </div>
+          <a href="#graphite" class="triad-link">
+            Visit Graphite Vault 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14m-7-7 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Pillar 3: Academic Topper -->
+        <div class="triad-card triad-academic">
+          <div class="triad-icon-wrap">🏆</div>
+          <span class="triad-role-tag">Dimension III • Intellect</span>
+          <h3 class="triad-title">Academic Topper & Scholar</h3>
+          <p class="triad-desc">
+            An unwavering record of scholastic dominance. Adorned with university gold medals, state and institutional rank 1 trophies, proving that disciplined intellect elevates artistic execution.
+          </p>
+          <div class="triad-pill-list">
+            <span class="triad-pill">University Rank 1</span>
+            <span class="triad-pill">Gold Medalist</span>
+            <span class="triad-pill">Scholastic Honors</span>
+            <span class="triad-pill">Analytical Rigor</span>
+          </div>
+          <a href="#academics" class="triad-link">
+            View Honor Roll 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14m-7-7 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: THE VOCAL STUDIO & AUDIO LOUNGE
+       ========================================================================== -->
+  <section id="music" class="section-padding" style="background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.08) 0%, transparent 60%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Audio Experience</span>
+        <h2 class="section-title">The Vocal Studio of <span class="gold-text">KPK</span></h2>
+        <p class="section-subtitle">
+          Immerse yourself in cinematic resonance. Experience live synthesized harmonics inspired by Praveen's studio sessions and vocal performances.
+        </p>
+      </div>
+
+      <div class="music-studio-grid">
+        <!-- Visual & Quote Card -->
+        <div class="music-visual-card">
+          <img src="assets/images/playback-singer.jpg" alt="Praveen Kumar K - Playback Singer in Studio" class="music-visual-img">
+          <div class="music-visual-overlay">
+            <p class="music-visual-quote">
+              "Singing is not just hitting the right frequencies; it is breathing raw vulnerability into words that linger forever."
+            </p>
+            <span class="music-visual-author">— Praveen Kumar K ("KPK DON")</span>
+          </div>
+        </div>
+
+        <!-- Interactive Audio Lounge Player Box -->
+        <div class="audio-suite-card">
+          <div class="audio-suite-header">
+            <div class="now-playing-info">
+              <div class="now-playing-icon">🎵</div>
+              <div>
+                <div id="nowPlayingTitle" class="now-playing-title">Symphony of the Soul</div>
+                <div id="nowPlayingGenre" class="now-playing-genre">Playback Style • Cinematic Melody</div>
+              </div>
+            </div>
+            <span class="audio-engine-badge">Live Synth Active</span>
+          </div>
+
+          <!-- Real-Time Frequency Waveform Canvas -->
+          <div class="visualizer-container">
+            <canvas id="audioVisualizerCanvas"></canvas>
+          </div>
+
+          <!-- Controls Row -->
+          <div class="audio-controls-row">
+            <button id="playPauseBtn" class="play-pause-btn" aria-label="Play Track">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </button>
+
+            <div class="track-timing">
+              <span id="trackTimeCurrent">00:00</span> / <span id="trackTimeTotal">03:45</span>
+            </div>
+
+            <!-- Volume Slider -->
+            <div class="volume-control-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="0.3" aria-label="Volume">
+            </div>
+          </div>
+
+          <!-- Tracklist Selector -->
+          <div class="track-list">
+            <div class="track-item active" data-index="0">
+              <div class="track-left">
+                <span class="track-number">01</span>
+                <div>
+                  <div class="track-name">Symphony of the Soul</div>
+                  <div class="track-style">Cinematic Melodic Track</div>
+                </div>
+              </div>
+              <span class="track-duration">3:45</span>
+            </div>
+
+            <div class="track-item" data-index="1">
+              <div class="track-left">
+                <span class="track-number">02</span>
+                <div>
+                  <div class="track-name">Graphite & Strings</div>
+                  <div class="track-style">Acoustic Guitar & Piano Nocturne</div>
+                </div>
+              </div>
+              <span class="track-duration">4:12</span>
+            </div>
+
+            <div class="track-item" data-index="2">
+              <div class="track-left">
+                <span class="track-number">03</span>
+                <div>
+                  <div class="track-name">Golden Horizons</div>
+                  <div class="track-style">Semi-Classical Vocal Fusion</div>
+                </div>
+              </div>
+              <span class="track-duration">3:58</span>
+            </div>
+
+            <div class="track-item" data-index="3">
+              <div class="track-left">
+                <span class="track-number">04</span>
+                <div>
+                  <div class="track-name">Midnight Studio Reflections</div>
+                  <div class="track-style">Unplugged Deep Baritone Serenade</div>
+                </div>
+              </div>
+              <span class="track-duration">4:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: THE GRAPHITE VAULT & PENCIL SHADING
+       ========================================================================== -->
+  <section id="graphite" class="section-padding graphite-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Graphite Mastery</span>
+        <h2 class="section-title">The Master of <span class="graphite-text">Pencil Shading</span></h2>
+        <p class="section-subtitle">
+          Transforming pure carbon into living emotion. Every portrait is an intricate interplay of gradient pressure, micro-stump blending, and hyper-realistic lighting.
+        </p>
+      </div>
+
+      <!-- Studio Showcase Grid -->
+      <div class="graphite-showcase-grid">
+        <div class="graphite-desk-card">
+          <img src="assets/images/artist-studio.jpg" alt="Praveen Kumar K sketching in his art studio with AR Rahman portrait and wildlife drawings" class="graphite-desk-img">
+          <div class="desk-overlay">
+            <div class="desk-caption">The Creator at His Studio Desk</div>
+            <div class="desk-subcaption">Featuring the iconic A.R. Rahman pencil portrait, the Lion, ocular realism, and botanical studies.</div>
+          </div>
+        </div>
+
+        <div class="graphite-insights">
+          <div class="insight-card">
+            <span class="insight-num">01</span>
+            <div>
+              <h4 class="insight-title">Hyper-Realistic Tonal Gradients</h4>
+              <p class="insight-text">
+                Utilizing grades from 2H for delicate skeletal foundations up to 9B and compressed charcoal for infinite black depth.
+              </p>
+            </div>
+          </div>
+
+          <div class="insight-card">
+            <span class="insight-num">02</span>
+            <div>
+              <h4 class="insight-title">Tribute to Maestro A.R. Rahman</h4>
+              <p class="insight-text">
+                One of KPK DON's most celebrated sketches — capturing the Oscar-winning composer in deep musical ecstasy with studio headphones.
+              </p>
+            </div>
+          </div>
+
+          <div class="insight-card">
+            <span class="insight-num">03</span>
+            <div>
+              <h4 class="insight-title">Micro-Detail Texture Shading</h4>
+              <p class="insight-text">
+                Individual pores, iris refraction rings, lion fur follicles, and organic water dewdrops crafted with tortillions and precision kneaded erasers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filterable Artwork Gallery -->
+      <div id="gallery">
+        <div class="gallery-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Masterpieces</button>
+          <button class="filter-btn" data-filter="portraits">Celebrity Portraits</button>
+          <button class="filter-btn" data-filter="realism">Hyper-Realism & Nature</button>
+          <button class="filter-btn" data-filter="studio">Studio Archive</button>
+        </div>
+
+        <div class="artwork-grid">
+          <!-- Artwork 1: A.R. Rahman -->
+          <div class="art-card" data-category="portraits" data-title="Maestro A.R. Rahman Tribute" data-medium="Graphite (HB, 4B, 8B) & Compressed Charcoal" data-desc="Tribute portrait capturing the legendary music director with headphone textures and transcendent facial expression." data-grade="2H, HB, 4B, 8B, Blending Stumps">
+            <img src="assets/images/crops/ar-rahman-sketch.jpg" alt="A.R. Rahman Pencil Portrait by Praveen Kumar K">
+            <div class="art-card-overlay">
+              <span class="art-badge">Masterwork</span>
+              <div class="art-card-title">A.R. Rahman Tribute</div>
+              <div class="art-card-medium">Celebrity Portrait • 8B Graphite</div>
+            </div>
+          </div>
+
+          <!-- Artwork 2: The Royal Lion -->
+          <div class="art-card" data-category="realism" data-title="The Royal Lion" data-medium="Graphite on Textured Bristol Vellum" data-desc="Intricate animal portrait featuring individual whiskers, mane depth, and captivating predatory eyes." data-grade="HB to 9B Graphite & Kneaded Eraser">
+            <img src="assets/images/crops/lion-sketch.jpg" alt="Realistic Lion Pencil Shading by Praveen Kumar K">
+            <div class="art-card-overlay">
+              <span class="art-badge">Wildlife</span>
+              <div class="art-card-title">The Royal Lion</div>
+              <div class="art-card-medium">Hyper-Realism • 9B Charcoal</div>
+            </div>
+          </div>
+
+          <!-- Artwork 3: The Visionary Eye -->
+          <div class="art-card" data-category="realism" data-title="Ocular Realism - The Human Eye" data-medium="Layered Graphite & Highlights" data-desc="Macro study of the human eye exhibiting iris striations, corneal light reflection, and delicate tear duct wetness." data-grade="Mono Zero Eraser & 6B Graphite">
+            <img src="assets/images/crops/eye-sketch.jpg" alt="Human Eye Pencil Shading">
+            <div class="art-card-overlay">
+              <span class="art-badge">Macro Study</span>
+              <div class="art-card-title">The Visionary Eye</div>
+              <div class="art-card-medium">Anatomical Realism</div>
+            </div>
+          </div>
+
+          <!-- Artwork 4: Botanical Rose -->
+          <div class="art-card" data-category="realism" data-title="Botanical Rose in Bloom" data-medium="Graphite Tone Shading" data-desc="Delicate petal curves, velvety shadow gradients, and organic botanical balance." data-grade="2H, HB, 2B, 4B & Tortillion">
+            <img src="assets/images/crops/rose-sketch.jpg" alt="Rose Pencil Sketch by Praveen Kumar K">
+            <div class="art-card-overlay">
+              <span class="art-badge">Fine Art</span>
+              <div class="art-card-title">Botanical Rose</div>
+              <div class="art-card-medium">Botanical Study • 4B Shading</div>
+            </div>
+          </div>
+
+          <!-- Artwork 5: Live Stage Singing -->
+          <div class="art-card" data-category="studio" data-title="Cinematic Stage Performance" data-medium="Live Playback & Stage Vocal Performance" data-desc="Praveen Kumar K performing emotive melodies live on stage with full musical immersion." data-grade="Live Stage Vocals">
+            <img src="assets/images/crops/singing-stage.jpg" alt="Praveen Kumar K Performing Vocals On Stage">
+            <div class="art-card-overlay">
+              <span class="art-badge">Playback</span>
+              <div class="art-card-title">Cinematic Stage</div>
+              <div class="art-card-medium">Live Vocal Rendition</div>
+            </div>
+          </div>
+
+          <!-- Artwork 6: Drawing In Action -->
+          <div class="art-card" data-category="studio" data-title="Graphite in Action" data-medium="Hand-Rendered Drawing at Studio Easel" data-desc="Praveen bringing portraits and textures to life with intense artistic concentration." data-grade="Fine Arts & Sketching">
+            <img src="assets/images/crops/drawing-action.jpg" alt="Praveen Kumar K Sketching in Studio">
+            <div class="art-card-overlay">
+              <span class="art-badge">In The Studio</span>
+              <div class="art-card-title">Easel in Motion</div>
+              <div class="art-card-medium">Drawing Mastery</div>
+            </div>
+          </div>
+
+          <!-- Artwork 7: University Gold Medalist & Awards -->
+          <div class="art-card" data-category="studio" data-title="University Gold Medalist & Rank 1" data-medium="Academic Laurels & Scholastic Trophies" data-desc="Praveen Kumar K celebrated with University Rank 1 Gold Medal and merit shields." data-grade="University Rank 1 Distinction">
+            <img src="assets/images/crops/topper-awards.jpg" alt="Praveen Kumar K with Gold Medals and Trophies">
+            <div class="art-card-overlay">
+              <span class="art-badge">Academics</span>
+              <div class="art-card-title">Gold Medal Triumph</div>
+              <div class="art-card-medium">Rank 1 Scholastic Honor</div>
+            </div>
+          </div>
+
+          <!-- Artwork 8: Studio Playback Session -->
+          <div class="art-card" data-category="studio" data-title="Acoustic & Vocal Tracking" data-medium="Studio Condenser & High-Fidelity Tracking" data-desc="Studio session recording lead playback vocals with warm acoustic orchestration." data-grade="Studio Audio Master">
+            <img src="assets/images/playback-singer.jpg" alt="Praveen Kumar K in Vocal Booth">
+            <div class="art-card-overlay">
+              <span class="art-badge">Studio Session</span>
+              <div class="art-card-title">Vocal Tracking</div>
+              <div class="art-card-medium">Studio Condenser Session</div>
+            </div>
+          </div>
+
+          <!-- Artwork 9: The Polymath Triad -->
+          <div class="art-card" data-category="studio" data-title="The Polymath Triad of KPK DON" data-medium="Complete Chronicle of Music, Art & Academics" data-desc="Master panoramic composition honoring Praveen's trifold dominance." data-grade="KPK DON Moniker Milestone">
+            <img src="assets/images/hero-multiverse.jpg" alt="The Triad of KPK DON">
+            <div class="art-card-overlay">
+              <span class="art-badge">Masterpiece</span>
+              <div class="art-card-title">The KPK Triad</div>
+              <div class="art-card-medium">Singer • Shader • Topper</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================================
+           INTERACTIVE PENCIL SHADING STUDIO (PLAYGROUND)
+           ====================================================================== -->
+      <div id="playground" class="shading-studio-wrap">
+        <div class="studio-toolbar">
+          <div class="tool-group">
+            <span class="tool-label">Graphite Grade:</span>
+            <button class="pencil-grade-btn" data-grade="2H">2H (Light)</button>
+            <button class="pencil-grade-btn" data-grade="HB">HB (Medium)</button>
+            <button class="pencil-grade-btn active" data-grade="2B">2B (Soft)</button>
+            <button class="pencil-grade-btn" data-grade="6B">6B (Dark)</button>
+            <button class="pencil-grade-btn" data-grade="CHARCOAL">Charcoal (9B)</button>
+            <button class="pencil-grade-btn" data-grade="SMUDGE">Blending Stump</button>
+            <button class="pencil-grade-btn" data-grade="ERASER">Eraser</button>
+          </div>
+
+          <div class="tool-group">
+            <button id="clearCanvasBtn" class="btn-secondary" style="padding: 6px 16px; font-size: 0.82rem;">Clear Paper</button>
+            <button id="downloadCanvasBtn" class="btn-primary" style="padding: 6px 18px; font-size: 0.82rem;">Save Your Sketch</button>
+          </div>
+        </div>
+
+        <div class="canvas-container">
+          <span class="canvas-hint">✏️ Draw or shade here with your mouse or finger — Experience the feel of graphite!</span>
+          <canvas id="pencilCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: ACADEMIC EXCELLENCE & SCHOLASTIC SUMMIT
+       ========================================================================== -->
+  <section id="academics" class="section-padding academic-section">
+    <div class="container">
+      <div class="academic-grid">
+        <!-- Left Column -->
+        <div class="academic-left">
+          <span class="section-tag">Scholastic Glory</span>
+          <h2 class="academic-headline">The Academic <span class="gold-text">Topper</span></h2>
+          <p class="section-subtitle">
+            While many view fine art and academic rigor as conflicting paths, Praveen Kumar K has demonstrated that the discipline of an analytical mind sharpens artistic precision, and artistic imagination fuels deep learning.
+          </p>
+
+          <div class="academic-quote-box">
+            "Intellectual discipline provides the structural architecture; artistic passion breathes the living soul into it. When both work in synergy, you don't just participate — you dominate."
+          </div>
+
+          <div class="academic-cards-col">
+            <div class="honor-item">
+              <div class="honor-badge">🥇</div>
+              <div>
+                <div class="honor-name">University Gold Medalist & Rank 1</div>
+                <div class="honor-desc">Achieved the supreme academic benchmark, leading the merit lists with impeccable marks and distinctions.</div>
+              </div>
+            </div>
+
+            <div class="honor-item">
+              <div class="honor-badge">🏆</div>
+              <div>
+                <div class="honor-name">Distinguished Scholar Awards & Trophies</div>
+                <div class="honor-desc">Recipient of multiple state, institutional, and collegiate awards for academic and extracurricular excellence.</div>
+              </div>
+            </div>
+
+            <div class="honor-item">
+              <div class="honor-badge">📚</div>
+              <div>
+                <div class="honor-name">Analytical Rigor Meets Creative Genius</div>
+                <div class="honor-desc">Excelling in high-complexity problem solving, mathematics, and disciplined theoretical frameworks.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column Visual -->
+        <div class="academic-right-img">
+          <img src="assets/images/hero-multiverse.jpg" alt="Academic Topper Praveen Kumar K with Gold Medals and Trophies">
+          <div class="academic-overlay">
+            <span class="academic-award-tag">Supreme Merit</span>
+            <div class="academic-award-title">Gold Medals, Trophies & Academic Distinction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: THE KPK DON STORY (BIOGRAPHY & PHILOSOPHY)
+       ========================================================================== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="about-box">
+        <div class="about-grid">
+          <!-- Left Frame -->
+          <div class="about-portrait-frame">
+            <img src="assets/images/portrait-profile.jpg" alt="Praveen Kumar K - The Polymath Known as KPK DON" class="about-portrait-img">
+          </div>
+
+          <!-- Right Content -->
+          <div class="about-content">
+            <span class="section-tag">The Legend</span>
+            <h2 class="about-title">Why They Call Him <span class="gold-text">"KPK DON"</span></h2>
+            
+            <p class="about-lead">
+              In a world that insists on singular specialization, Praveen Kumar K rewrote the playbook by mastering three wildly different arenas.
+            </p>
+
+            <p class="about-text">
+              The title <strong>"KPK DON"</strong> wasn't given lightly. It was forged on the college stage where his playback vocals left auditoriums stunned, at the drawing easel where his graphite portraits brought faces of legends like A.R. Rahman to vivid life, and at the examination hall where he walked away with top ranks and gold medals.
+            </p>
+
+            <p class="about-text">
+              Praveen stands as a modern symbol for polymathy — proving that an artist can have the mathematical precision of a top scholar, and a scholar can have the sensitive, emotional soul of an artist.
+            </p>
+
+            <div class="about-badges">
+              <div class="about-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                Master Vocalist
+              </div>
+              <div class="about-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                Hyper-Realism Artist
+              </div>
+              <div class="about-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                Gold Medal Scholar
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: BOOKING & COMMISSION HUB (CONTACT)
+       ========================================================================== -->
+  <section id="contact" class="section-padding contact-section">
+    <div class="container">
+      <div class="contact-card-wrap">
+        <div class="contact-grid">
+          <!-- Left Info -->
+          <div class="contact-info">
+            <span class="section-tag">Collaborations & Inquiries</span>
+            <h2 class="contact-title">Collaborate with <span class="gold-text">KPK DON</span></h2>
+            <p class="contact-desc">
+              Whether you are looking to book a studio playback vocal session, commission a custom hyper-realistic pencil portrait, or invite Praveen for a keynote / academic mentorship, get in touch directly.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">🎙️</div>
+                <div>
+                  <div class="channel-label">Playback & Vocal Bookings</div>
+                  <div class="channel-val">Studio Sessions, Film Playback, Concerts</div>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">✏️</div>
+                <div>
+                  <div class="channel-label">Custom Art Commissions</div>
+                  <div class="channel-val">Graphite & Charcoal Portraits (A4 to A1 sizes)</div>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">🎓</div>
+                <div>
+                  <div class="channel-label">Academic Mentorship</div>
+                  <div class="channel-val">Keynotes, High-Performer Guidance & Seminars</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Booking Form -->
+          <div class="contact-form-col">
+            <form id="bookingForm" class="booking-form">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="clientName" class="form-label">Your Name *</label>
+                  <input type="text" id="clientName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="clientPhone" class="form-label">Phone / WhatsApp *</label>
+                  <input type="tel" id="clientPhone" class="form-input" placeholder="+91 98765 43210" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="serviceType" class="form-label">I Am Inquiring About *</label>
+                <select id="serviceType" class="form-select" required>
+                  <option value="Playback Singing / Studio Vocal Recording">Playback Singing / Studio Vocal Recording</option>
+                  <option value="Custom Pencil Portrait Commission">Custom Pencil Portrait Commission (Graphite/Charcoal)</option>
+                  <option value="Live Stage Music Performance">Live Stage Music Performance</option>
+                  <option value="Academic Mentorship / Keynote Speaker">Academic Mentorship / Keynote Speaker</option>
+                  <option value="Media & Press Collaboration">Media & Press Collaboration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="projectDetails" class="form-label">Project Details & Requirements *</label>
+                <textarea id="projectDetails" class="form-textarea" placeholder="Tell Praveen about your project, song style, artwork dimensions, or event timeline..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Send Direct Inquiry to KPK DON</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="formFeedback" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ARTWORK LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Artwork Inspector">
+    <div class="lightbox-content">
+      <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="Close Preview">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="Artwork Preview" class="lightbox-img">
+      </div>
+
+      <div class="lightbox-details">
+        <div>
+          <span class="section-tag" style="margin-bottom: 10px;">Graphite Vault</span>
+          <h3 id="lightboxTitle" class="lightbox-title">Artwork Title</h3>
+          <p id="lightboxMedium" class="art-card-medium" style="margin-bottom: 16px;">Medium</p>
+          <p id="lightboxDesc" class="about-text">Description</p>
+
+          <div class="lightbox-spec-list">
+            <div class="lightbox-spec">
+              <strong>Pencil Grades:</strong> <span id="lightboxPencilGrade">2H, HB, 4B, 8B</span>
+            </div>
+            <div class="lightbox-spec">
+              <strong>Artist:</strong> Praveen Kumar K ("KPK DON")
+            </div>
+            <div class="lightbox-spec">
+              <strong>Technique:</strong> Layered Gradient Shading & Stump Blending
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary" style="justify-content: center; margin-top: 20px;">
+          Commission a Similar Piece
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Praveen Kumar K</span>
+          <span class="footer-tagline">"KPK DON" • Playback Singer • Master Pencil Shader • Academic Topper</span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#triad">The Triad</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#graphite">Art</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Praveen Kumar K (KPK DON). All Rights Reserved. Crafted with passion, graphite & melody.
+        </div>
+
+        <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
